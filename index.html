@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joining Channel...</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4J2K22DTM1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-4J2K22DTM1');
+    </script>
+
+    <style>
+        :root {
+            --telegram-blue: #0088cc;
+            --background-light: #f4f7f9;
+            --text-primary: #212121;
+            --text-secondary: #757575;
+            --text-green: #20d441;
+            --text-red: #d0021b;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--background-light);
+            color: var(--text-primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 650px;
+            width: 100%;
+            background-color: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Important for the loader */
+        }
+        
+        .progress-container {
+            width: calc(100% + 80px); /* Extends across the padding */
+            margin-left: -40px; /* Aligns to edges */
+            margin-right: -40px;
+            margin-top: -40px; /* Moves it to the very top */
+            margin-bottom: 40px; /* Creates space before the image */
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 5px;
+            background-color: #e0e0e0;
+        }
+
+        .progress {
+            width: 0%;
+            height: 100%;
+            background-color: var(--telegram-blue);
+            animation: fill-progress 4s linear forwards;
+        }
+
+        @keyframes fill-progress {
+            from { width: 0%; }
+            to { width: 100%; }
+        }
+
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--telegram-blue);
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        h1 .sakshi {
+            color: var(--text-green);
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            margin-bottom: 35px;
+        }
+
+        .features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 35px;
+            width: 100%;
+        }
+        
+        .features li {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        
+        .features .experience { color: var(--text-red); }
+        .features .winner { color: var(--text-green); }
+        .features .priority { color: var(--text-primary); }
+
+        .join-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            width: 100%;
+            background-color: var(--telegram-blue);
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.2rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            padding: 16px 20px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 136, 204, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+        
+        .join-button:hover {
+            background-color: #0077b3;
+            box-shadow: 0 6px 15px rgba(0, 136, 204, 0.4);
+            transform: translateY(-3px);
+        }
+        
+        .first-button {
+            margin-bottom: 35px;
+        }
+
+        .join-button .icon {
+            width: 24px;
+            height: 24px;
+            fill: var(--white);
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 25px;
+            }
+             .progress-container {
+                width: calc(100% + 50px);
+                margin-left: -25px;
+                margin-right: -25px;
+                margin-top: -25px;
+                margin-bottom: 25px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .profile-image {
+                width: 140px;
+                height: 140px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    
+        <img src="https://d1yei2z3i6k35z.cloudfront.net/13204433/68b2506b6928e_WhatsAppImage2025-08-29at12.59.45AM.jpeg" alt="Channel Admin" class="profile-image">
+        
+        <h1>EARN WITH <span class="sakshi">SAKSHI</span></h1>
+        
+        <p class="subtitle">THE MOST TRUSTED COLOR TRADING CHANNEL</p>
+        
+        <a href="https://t.me/+epCDKIbdlrhkNDdl" class="join-button first-button">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23l7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3L3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.58c-.28 1.13-1.04 1.4-1.84.91l-4.98-3.59l-2.32 2.23c-.25.26-.47.47-.97.47z"></path></svg>
+            <span>Join Channel</span>
+            <svg class="icon" viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23l7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3L3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.58c-.28 1.13-1.04 1.4-1.84.91l-4.98-3.59l-2.32 2.23c-.25.26-.47.47-.97.47z"></path></svg>
+        </a>
+        
+        <ul class="features">
+            <li class="experience"><strong>5 YEARS EXPERIENCE</strong></li>
+            <li class="winner"><strong>10 LAKH+ WINNERS</strong></li>
+            <li class="priority"><strong>CUSTOMER CONCERN, OUR TOP PRIORITY.</strong></li>
+        </ul>
+
+        <a href="https://t.me/+epCDKIbdlrhkNDdl" class="join-button">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23l7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3L3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.58c-.28 1.13-1.04 1.4-1.84.91l-4.98-3.59l-2.32 2.23c-.25.26-.47.47-.97.47z"></path></svg>
+            <span>Join Channel</span>
+            <svg class="icon" viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23l7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3L3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.58c-.28 1.13-1.04 1.4-1.84.91l-4.98-3.59l-2.32 2.23c-.25.26-.47.47-.97.47z"></path></svg>
+        </a>
+        
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const telegramChannelUrl = 'https://t.me/+epCDKIbdlrhkNDdl';
+            const redirectDelay = 4000; // 4 seconds in milliseconds
+
+            setTimeout(() => {
+                // Check if gtag function exists (to avoid errors if GA fails to load)
+                if (typeof gtag === 'function') {
+                    gtag('event', 'redirect', {
+                        'event_category': 'Telegram',
+                        'event_label': 'Automatic Redirect',
+                        'value': redirectDelay
+                    });
+                }
+
+                // This is the line that redirects the user.
+                window.location.href = telegramChannelUrl;
+
+            }, redirectDelay);
+
+        });
+    </script>
+
+</body>
+</html>
